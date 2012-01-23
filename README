@@ -1,0 +1,35 @@
+This script is my tool for analyzing stocks on the stock market.
+
+The main tools that I use for stock picking are:
+
+- Yield
+- Linear Transformation
+- Beta
+
+As this script grows, it might become necessary to split it
+into more purposeful files. For now, a single script will do.
+
+It requires the following libraries:
+
+- urllib (standard)
+- datetime (standard)
+- bivariate (my own script, included)
+- matplotlib (http://www.scipy.org/PyLab)
+
+For now, just run the script and see the output.
+
+python stocks.py
+
+OUTPUT.
+
+The graph produced by the program features a single 2D plot.
+
+The x-axis is the current price represented by a linear transformation
+score (i.e. how close it is to the 52-week high or 52-week low.)
+
+The y-axis is the beta score (i.e. a linear regression slope formula of
+the stock compared to the S&P 500.).
+
+Each point is plotted with a blue "+" to represent that the stock is trading
+higher after 52 weeks OR a red "+" to represent that the stock is trading
+lower after 52 weeks (my dad thinks that this information is useful, I don't).
